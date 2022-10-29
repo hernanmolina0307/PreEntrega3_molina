@@ -1,0 +1,344 @@
+main {
+    background-image: $background1;
+
+    .art1 {
+        display: flex;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+
+        .div1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60vw;
+            padding-left: 2vw;
+
+            h2 {
+                font-family: $font2;
+                font-size: $fontsize2;
+                padding-bottom: 3vh;
+            }
+
+            p {
+                font-family: $font4;
+                font-size: $fontsize1;
+                padding-bottom: 2vh;
+            }
+        }
+
+        .lista1 {
+            padding-top: 3vh;
+            padding-right: 5vw;
+            width: 50vw;
+
+            li {
+                list-style: square;
+                font-size: $fontsize1;
+
+                a {
+                    font-family: $font4;
+                }
+            }
+        }
+    }
+
+}
+/************************ Estilos de galeria ******************************/
+.galery {
+    background-image: linear-gradient(360deg,
+            rgba(177, 255, 250, 0.5) 0%,
+            #adecfa);
+    background-attachment: fixed;
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        font-family: $font2;
+        font-size: $fontsize2;
+    }
+
+    .galeria {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1vh;
+
+        &__scroll {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: scroll;
+        }
+
+        &__image {
+            width: 100%;
+            max-width: 300px;
+            opacity: 50%;
+        }
+
+        &__image:hover {
+            opacity: 100%;
+        }
+
+        &__grilla {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
+/************************ Estilos de area de trabajo ******************************/
+.mapa {
+    .mapa1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3vh;
+
+        img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        p {
+            font-family: $font2;
+            font-size: $fontsize2;
+        }
+    }
+}
+/************************ Estilos de CONTACTO ******************************/
+.sect2 {
+    .cont1 {
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 5vh;
+
+            legend {
+                padding-bottom: 2vh;
+                padding-top: 3vh;
+                font-family: $font3;
+            }
+
+            textarea {
+                border: 2px solid black;
+                resize: none;
+            }
+        }
+    }
+
+    .cont2 {
+        .col2 {
+            display: flex;
+            align-items: center;
+            padding-bottom: 5vh;
+            justify-content: center;
+
+            label {
+                font-family: $font3;
+                padding-left: 2vw;
+                padding-right: 1vw;
+            }
+        }
+    }
+
+    .col3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5vh;
+
+        span {
+            padding-left: 1vw;
+            padding-right: 5vw;
+            font-family: $font3;
+        }
+    }
+
+    .col4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5vh;
+
+        button {
+            font: bold $fontsize1 $font4;
+            margin-left: 1vw;
+            padding: 1vh 1vw;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background: $fontcolor2;
+
+            &:hover {
+                color: $color1;
+            }
+        }
+
+    }
+}
+@media only screen and (min-width: 340px) and (max-width: 768px){
+    main {
+        background-image: $background1;
+
+        .art1 {
+            display: flex;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            flex-direction: column;
+            align-items: center;
+
+            .div1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 1vw;
+                width: 340px;
+
+                h2 {
+                    font-family: $font2;
+                    font-size: $fontsize2;
+                    padding-bottom: 3vh;
+                }
+
+                p {
+                    font-family: $font4;
+                    font-size: $fontsize1;
+                    padding-bottom: 2vh;
+                }
+            }
+
+            .lista1 {
+                padding-top: 3vh;
+                padding-right: 5vw;
+                width: 340px;
+
+                li {
+                    list-style: square;
+                    font-size: $fontsize1;
+
+                    a {
+                        font-family: $font4;
+                    }
+                }
+            }
+        }
+
+        section article {
+            width: 70%;
+
+            &.harley {
+                display: none;
+            }
+        }
+    }
+
+    .sect2 {
+        .cont1 {
+            max-width: 768px;
+
+            .col1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5vh;
+                padding-left: 2vw;
+
+                legend {
+                    padding-bottom: 2vh;
+                    padding-top: 3vh;
+                    font-family: $font3;
+                }
+
+                textarea {
+                    border: 2px solid black;
+                    resize: none;
+                    max-width: 340px;
+                }
+            }
+        }
+
+        .cont2 {
+            .col2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5vh;
+                justify-content: center;
+
+                label {
+                    font-family: $font3;
+                    padding-left: 2vw;
+                    padding-right: 1vw;
+                }
+            }
+        }
+
+        .col3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5vh;
+
+            span {
+                padding-left: 1vw;
+                padding-right: 5vw;
+                font-family: $font3;
+            }
+        }
+
+        .col4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5vh;
+
+            button {
+                padding: 1vh;
+                font: bold $fontsize1 $font4;
+                border: 2px solid #333;
+                border-radius: 5px;
+                background: $fontcolor2;
+                &:hover {
+                    color: $color1;
+                }
+            }
+
+        }
+    }
+
+    /************************ Estilos de galeria MediaQueries******************************/
+    .galery {
+
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 7vw;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            font-family: $font2;
+            font-size: $fontsize2;
+        }
+    }
+
+    /************************ Estilos de area de trabajo MediaQueries ******************************/
+    .mapa {
+        .mapa1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3vh;
+            max-width: 768px;
+
+            img {
+                width: 100%;
+                max-width: 340px;
+            }
+        }
+    }
+}

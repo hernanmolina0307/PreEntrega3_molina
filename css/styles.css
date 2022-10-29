@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Oswald:wght@300&family=Roboto&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: aquamarine;
+}
+header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header section h1 {
+  font-size: 3rem;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-family: "Girassol", cursive;
+}
+header section ul {
+  display: flex;
+}
+header section ul li {
+  list-style-type: none;
+}
+header section ul li a {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-left: 5vw;
+  font-family: "Girassol", cursive;
+}
+header section ul li a:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 768px) {
+  header {
+    background-color: aquamarine;
+  }
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header section h1 {
+    font-size: 3rem;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-family: "Girassol", cursive;
+  }
+  header section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20vw;
+    padding-bottom: 2vh;
+  }
+  header section ul li {
+    list-style-type: none;
+  }
+  header section ul li a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: "Girassol", cursive;
+  }
+}
+main {
+  background-image: linear-gradient(360deg, rgba(177, 255, 250, 0.5) 0%, #adecfa);
+}
+main .art1 {
+  display: flex;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+main .art1 .div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  padding-left: 2vw;
+}
+main .art1 .div1 h2 {
+  font-family: "Girassol", cursive;
+  font-size: 2rem;
+  padding-bottom: 3vh;
+}
+main .art1 .div1 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2vh;
+}
+main .art1 .lista1 {
+  padding-top: 3vh;
+  padding-right: 5vw;
+  width: 50vw;
+}
+main .art1 .lista1 li {
+  list-style: square;
+  font-size: 1rem;
+}
+main .art1 .lista1 li a {
+  font-family: "Roboto", sans-serif;
+}
+
+/************************ Estilos de galeria ******************************/
+.galery {
+  background-image: linear-gradient(360deg, rgba(177, 255, 250, 0.5) 0%, #adecfa);
+  background-attachment: fixed;
+}
+.galery .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-family: "Girassol", cursive;
+  font-size: 2rem;
+}
+.galery .galeria {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+.galery .galeria__scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+.galery .galeria__image {
+  width: 100%;
+  max-width: 300px;
+  opacity: 50%;
+}
+.galery .galeria__image:hover {
+  opacity: 100%;
+}
+.galery .galeria__grilla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/************************ Estilos de area de trabajo ******************************/
+.mapa .mapa1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3vh;
+}
+.mapa .mapa1 img {
+  width: 100%;
+  max-width: 600px;
+}
+.mapa .mapa1 p {
+  font-family: "Girassol", cursive;
+  font-size: 2rem;
+}
+
+/************************ Estilos de CONTACTO ******************************/
+.sect2 .cont1 .col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+.sect2 .cont1 .col1 legend {
+  padding-bottom: 2vh;
+  padding-top: 3vh;
+  font-family: "Oswald", sans-serif;
+}
+.sect2 .cont1 .col1 textarea {
+  border: 2px solid black;
+  resize: none;
+}
+.sect2 .cont2 .col2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5vh;
+  justify-content: center;
+}
+.sect2 .cont2 .col2 label {
+  font-family: "Oswald", sans-serif;
+  padding-left: 2vw;
+  padding-right: 1vw;
+}
+.sect2 .col3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+.sect2 .col3 span {
+  padding-left: 1vw;
+  padding-right: 5vw;
+  font-family: "Oswald", sans-serif;
+}
+.sect2 .col4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+.sect2 .col4 button {
+  font: bold 1rem "Roboto", sans-serif;
+  margin-left: 1vw;
+  padding: 1vh 1vw;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: white;
+}
+.sect2 .col4 button:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 768px) {
+  main {
+    background-image: linear-gradient(360deg, rgba(177, 255, 250, 0.5) 0%, #adecfa);
+  }
+  main .art1 {
+    display: flex;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .art1 .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1vw;
+    width: 340px;
+  }
+  main .art1 .div1 h2 {
+    font-family: "Girassol", cursive;
+    font-size: 2rem;
+    padding-bottom: 3vh;
+  }
+  main .art1 .div1 p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding-bottom: 2vh;
+  }
+  main .art1 .lista1 {
+    padding-top: 3vh;
+    padding-right: 5vw;
+    width: 340px;
+  }
+  main .art1 .lista1 li {
+    list-style: square;
+    font-size: 1rem;
+  }
+  main .art1 .lista1 li a {
+    font-family: "Roboto", sans-serif;
+  }
+  main section article {
+    width: 70%;
+  }
+  main section article.harley {
+    display: none;
+  }
+  .sect2 .cont1 {
+    max-width: 768px;
+  }
+  .sect2 .cont1 .col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+    padding-left: 2vw;
+  }
+  .sect2 .cont1 .col1 legend {
+    padding-bottom: 2vh;
+    padding-top: 3vh;
+    font-family: "Oswald", sans-serif;
+  }
+  .sect2 .cont1 .col1 textarea {
+    border: 2px solid black;
+    resize: none;
+    max-width: 340px;
+  }
+  .sect2 .cont2 .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+    justify-content: center;
+  }
+  .sect2 .cont2 .col2 label {
+    font-family: "Oswald", sans-serif;
+    padding-left: 2vw;
+    padding-right: 1vw;
+  }
+  .sect2 .col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+  }
+  .sect2 .col3 span {
+    padding-left: 1vw;
+    padding-right: 5vw;
+    font-family: "Oswald", sans-serif;
+  }
+  .sect2 .col4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+  }
+  .sect2 .col4 button {
+    padding: 1vh;
+    font: bold 1rem "Roboto", sans-serif;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: white;
+  }
+  .sect2 .col4 button:hover {
+    color: red;
+  }
+  /************************ Estilos de galeria MediaQueries******************************/
+  .galery .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 7vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: "Girassol", cursive;
+    font-size: 2rem;
+  }
+  /************************ Estilos de area de trabajo MediaQueries ******************************/
+  .mapa .mapa1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vh;
+    max-width: 768px;
+  }
+  .mapa .mapa1 img {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+footer {
+  background-color: aquamarine;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4vh 0 4vh 0;
+}
+footer div span {
+  margin-left: 1vw;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cards article {
+  position: relative;
+  background: #f3f3f3;
+  width: 300px;
+  margin: 2vh 0;
+  text-align: center;
+}
+
+article div.bg-HeaderCard {
+  padding: 10px;
+  width: 100%;
+  height: 194px;
+  border-radius: 0;
+  text-align: left;
+}
+article div.bg-HeaderCard.Batman {
+  background: linear-gradient(360deg, rgba(56, 250, 8, 0.842) 0%, #d3f1ca);
+  background-size: cover;
+}
+article div.bg-HeaderCard.wonderWoman {
+  background: linear-gradient(360deg, rgba(56, 250, 8, 0.842) 0%, #d3f1ca);
+  background-size: cover;
+}
+article div.bg-HeaderCard.superman {
+  background: linear-gradient(360deg, rgba(56, 250, 8, 0.842) 0%, #d3f1ca);
+  background-size: cover;
+}
+article div.bg-HeaderCard.hearley {
+  background: linear-gradient(360deg, rgba(56, 250, 8, 0.842) 0%, #d3f1ca);
+  background-size: cover;
+}
+article div.bg-HeaderCard i {
+  color: red;
+  font-size: 24px;
+}
+article img.circlePic {
+  position: absolute;
+  left: calc(50% - 62.5px);
+  top: 131.5px;
+  width: 125px;
+  border-radius: 50%;
+}
+article h4 {
+  margin-top: 75px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Girassol", cursive;
+}
+article p {
+  font-size: 1rem;
+  font-family: "Girassol", cursive;
+  height: 190px;
+  text-align: left;
+  margin: 10px 10px;
+}
+article button {
+  border: none;
+  color: white;
+  margin: 25px;
+  padding: 10px 30px;
+  background: #00669f;
+}
+
+/*# sourceMappingURL=styles.css.map */
